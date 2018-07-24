@@ -32,5 +32,5 @@ RUN apt-get update && apt-get install -y --no-install-recommends --allow-downgra
         python${PYTHON_VERSION}-dev
 
 RUN curl -O https://bootstrap.pypa.io/get-pip.py && \
-    python get-pip.py && \
+    python2.7 get-pip.py && \
     rm get-pip.py
